@@ -9,9 +9,9 @@ resources:
 - repo: self
 
 variables:
+  group: var
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'b7d59440-7369-47e1-aedd-0b1cae585c18'
-  imageRepository: $var
   containerRegistry: 'acasve1981.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
